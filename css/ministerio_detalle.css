@@ -135,6 +135,48 @@
   transform: scale(1.05);
 }
 
+/* Sección: Equipo de Liderazgo */
+.seccion-equipo {
+  margin-bottom: 4rem;
+}
+
+/* Sección: Foto Grupal */
+.seccion-foto-grupal {
+  margin-bottom: 4rem;
+}
+
+.foto-grupal-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  background-color: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.foto-grupal {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.foto-grupal:hover {
+  transform: scale(1.02);
+}
+
+.pie-foto {
+  text-align: center;
+  font-size: 0.95rem;
+  color: #7f8c8d;
+  font-style: italic;
+  margin-top: 1.2rem;
+  margin-bottom: 0;
+}
+
+/* Sección: Equipo de Liderazgo */
+
 /* Información del miembro */
 .info-miembro {
   padding: 1.8rem;
