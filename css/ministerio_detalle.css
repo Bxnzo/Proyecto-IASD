@@ -1,0 +1,251 @@
+/* ==========================================
+   CSS ÚNICO PARA TODAS LAS PÁGINAS DE MINISTERIOS
+   Archivo: ministerio_detalle.css
+   Uso: Todas las páginas dentro de /ministerios/
+   ========================================== */
+
+/* Hero Banner del Ministerio */
+.hero-ministerio {
+  position: relative;
+  background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+  min-height: 45vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  padding: 3rem 2rem;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(44, 62, 80, 0.2);
+}
+
+.hero-contenido {
+  position: relative;
+  z-index: 1;
+  max-width: 800px;
+}
+
+.logo-ministerio-hero {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+  margin-bottom: 1.5rem;
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2));
+}
+
+.hero-contenido h2 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.hero-contenido p {
+  font-size: 1.2rem;
+  font-weight: 300;
+  opacity: 0.9;
+}
+
+/* Contenedor principal */
+.contenedor-ministerio {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+}
+
+/* Sección: Sobre el Ministerio */
+.seccion-sobre {
+  margin-bottom: 4rem;
+}
+
+.sobre-contenido {
+  max-width: 900px;
+  margin: 0 auto;
+  background-color: white;
+  padding: 2.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.sobre-contenido p {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: #34495e;
+  margin-bottom: 1.5rem;
+}
+
+.sobre-contenido p:last-child {
+  margin-bottom: 0;
+}
+
+/* Sección: Equipo de Liderazgo */
+.seccion-equipo {
+  margin-bottom: 4rem;
+}
+
+.grid-equipo {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2.5rem;
+  margin-top: 2rem;
+}
+
+/* Tarjeta de miembro del equipo */
+.tarjeta-miembro {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.tarjeta-miembro:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Foto del miembro */
+.foto-container {
+  width: 100%;
+  height: 280px;
+  overflow: hidden;
+  background: linear-gradient(135deg, #ecf0f1 0%, #bdc3c7 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.foto-miembro {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.tarjeta-miembro:hover .foto-miembro {
+  transform: scale(1.05);
+}
+
+/* Información del miembro */
+.info-miembro {
+  padding: 1.8rem;
+  text-align: center;
+}
+
+.cargo {
+  display: inline-block;
+  background-color: #2c3e50;
+  color: white;
+  padding: 0.4rem 1rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 1rem;
+}
+
+.info-miembro h4 {
+  font-size: 1.3rem;
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.descripcion {
+  font-size: 0.95rem;
+  color: #7f8c8d;
+  line-height: 1.5;
+}
+
+/* Colores de cargo por posición en el grid */
+.tarjeta-miembro:nth-child(1) .cargo {
+  background-color: #3498db; /* Azul para Director */
+}
+
+.tarjeta-miembro:nth-child(2) .cargo {
+  background-color: #2ecc71; /* Verde para Secretario */
+}
+
+.tarjeta-miembro:nth-child(3) .cargo {
+  background-color: #e74c3c; /* Rojo para Asociado */
+}
+
+/* Botón de regreso */
+.boton-regreso {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+/* ==========================================
+   RESPONSIVE
+   ========================================== */
+
+@media (max-width: 768px) {
+  .hero-ministerio {
+    min-height: 40vh;
+    padding: 2rem 1rem;
+  }
+
+  .logo-ministerio-hero {
+    width: 100px;
+    height: 100px;
+  }
+
+  .hero-contenido h2 {
+    font-size: 2rem;
+  }
+
+  .hero-contenido p {
+    font-size: 1rem;
+  }
+
+  .contenedor-ministerio {
+    padding: 3rem 1rem;
+  }
+
+  .sobre-contenido {
+    padding: 1.8rem;
+  }
+
+  .grid-equipo {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .foto-container {
+    height: 320px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-ministerio {
+    min-height: 35vh;
+  }
+
+  .hero-contenido h2 {
+    font-size: 1.6rem;
+  }
+
+  .logo-ministerio-hero {
+    width: 80px;
+    height: 80px;
+  }
+
+  .sobre-contenido {
+    padding: 1.5rem;
+  }
+
+  .sobre-contenido p {
+    font-size: 1rem;
+  }
+}

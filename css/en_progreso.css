@@ -1,0 +1,116 @@
+/* ==========================================
+   ESTILOS ESPECÍFICOS - PÁGINA EN PROGRESO
+   ========================================== */
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Contenido principal */
+.contenido-progreso {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+/* Contenedor principal */
+.container-progreso {
+  text-align: center;
+  padding: 3rem 2rem;
+  max-width: 600px;
+  background-color: white;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo grande */
+.logo-grande {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Título */
+.container-progreso h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #2c3e50;
+}
+
+/* Texto */
+.container-progreso p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+  color: #7f8c8d;
+}
+
+/* Loader animado */
+.loader {
+  border: 6px solid #ecf0f1;
+  border-top: 6px solid #2c3e50;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  margin: 0 auto 2rem;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Botón de volver */
+.container-progreso .btn {
+  margin-top: 1rem;
+}
+
+/* ==========================================
+   RESPONSIVE
+   ========================================== */
+
+@media (max-width: 768px) {
+  .contenido-progreso {
+    padding: 1rem;
+  }
+
+  .container-progreso {
+    padding: 2rem 1.5rem;
+  }
+
+  .logo-grande {
+    width: 80px;
+    height: 80px;
+  }
+
+  .container-progreso h2 {
+    font-size: 1.5rem;
+  }
+
+  .container-progreso p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .container-progreso {
+    padding: 1.5rem 1rem;
+  }
+
+  .container-progreso h2 {
+    font-size: 1.3rem;
+  }
+
+  .container-progreso p {
+    font-size: 0.95rem;
+  }
+}

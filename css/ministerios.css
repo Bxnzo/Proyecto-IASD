@@ -1,0 +1,163 @@
+/* ==========================================
+   ESTILOS ESPECÍFICOS - PÁGINA DE MINISTERIOS
+   ========================================== */
+
+/* Hero Banner */
+.hero-ministerios {
+  position: relative;
+  background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+  height: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(44, 62, 80, 0.3);
+}
+
+.hero-contenido {
+  position: relative;
+  z-index: 1;
+  padding: 2rem;
+}
+
+.hero-contenido h2 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+}
+
+.hero-contenido p {
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+/* Contenedor de ministerios */
+.contenedor-ministerios {
+  padding: 4rem 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* Grid de ministerios */
+.grid-ministerios {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+/* Tarjetas de ministerio */
+.tarjeta-ministerio {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.tarjeta-ministerio:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.tarjeta-contenido {
+  padding: 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.logo-ministerio {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  margin-bottom: 1.5rem;
+  transition: transform 0.3s ease;
+}
+
+.tarjeta-ministerio:hover .logo-ministerio {
+  transform: scale(1.1);
+}
+
+.tarjeta-contenido h2 {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  color: #2c3e50;
+  font-weight: 600;
+}
+
+.tarjeta-contenido p {
+  font-size: 0.95rem;
+  margin-bottom: 1.5rem;
+  color: #7f8c8d;
+  line-height: 1.6;
+  flex-grow: 1;
+}
+
+/* Botones */
+.tarjeta-contenido .btn-primary {
+  margin-top: auto;
+}
+
+/* ==========================================
+   RESPONSIVE
+   ========================================== */
+
+@media (max-width: 768px) {
+  .hero-ministerios {
+    height: 35vh;
+  }
+
+  .hero-contenido h2 {
+    font-size: 2rem;
+  }
+
+  .hero-contenido p {
+    font-size: 1rem;
+  }
+
+  .contenedor-ministerios {
+    padding: 3rem 1rem;
+  }
+
+  .grid-ministerios {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1.5rem;
+  }
+
+  .tarjeta-contenido {
+    padding: 1.5rem;
+  }
+
+  .logo-ministerio {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-ministerios {
+    height: 30vh;
+  }
+
+  .hero-contenido h2 {
+    font-size: 1.5rem;
+  }
+
+  .grid-ministerios {
+    grid-template-columns: 1fr;
+  }
+}

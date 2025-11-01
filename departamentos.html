@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Departamentos de la Iglesia Adventista del Séptimo Día Nueva Jerusalén" />
+  <meta name="theme-color" content="#2c3e50" />
+  <title>Departamentos - IASD Nueva Jerusalén</title>
+  
+  <!-- Favicons -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./imagenes/logo_iasd.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./imagenes/logo_iasd.png">
+  
+  <!-- Fuentes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Estilos -->
+  <link rel="stylesheet" href="./css/base.css" />
+  <link rel="stylesheet" href="./css/departamentos.css" />
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="header">
+        <div class="logo-container">
+            <a href="index.html" aria-label="Inicio">
+                <img src="./imagenes/logo_iasd.png" alt="Logo IASD" class="logo" width="50" height="50">
+            </a>
+            <h1 class="titulo-iglesia">IASD Nueva Jerusalén</h1>
+        </div>
+        <nav class="nav" aria-label="Navegación principal">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="horarios.html">Horarios</a></li>
+                <li><a href="ministerios.html">Ministerios</a></li>
+                <li><a href="departamentos.html" class="activo" aria-current="page">Departamentos</a></li>
+                <li><a href="peticiones.html">Peticiones</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- HERO BANNER -->
+    <section class="hero-departamentos">
+        <div class="hero-overlay"></div>
+        <div class="hero-contenido">
+            <h2>Departamentos</h2>
+            <p>Ministerios que forman parte de nuestra comunidad</p>
+        </div>
+    </section>
+
+    <!-- MAIN CONTENT -->
+    <main class="contenedor-departamentos">
+        <h3 class="section-title">Nuestros Departamentos</h3>
+        
+        <div class="grid-departamentos">
+            <!-- Departamento de Ancianos -->
+            <section class="tarjeta-departamento">
+                <div class="departamento-icono">⛪</div>
+                <h2>Departamento de Ancianos</h2>
+                <p>Liderazgo espiritual y guía pastoral para la congregación. Responsables de la administración de los sacramentos y el cuidado espiritual de los miembros.</p>
+                
+                <button class="btn-ver-mas" data-departamento="ancianos">Ver más</button>
+                
+                <div class="departamento-detalles" id="detalles-ancianos">
+                    <div class="detalles-header">
+                        <h3>Equipo de Liderazgo</h3>
+                    </div>
+                    <div class="detalles-contenido">
+                        <div class="miembro-info">
+                            <img src="./imagenes/persona_placeholder.png" alt="Primer Anciano" class="miembro-foto">
+                            <div class="miembro-texto">
+                                <strong>Primer Anciano:</strong>
+                                <span>Eugenio Pérez</span>
+                            </div>
+                        </div>
+                        <div class="miembro-info">
+                            <img src="./imagenes/persona_placeholder.png" alt="Segundo Anciano" class="miembro-foto">
+                            <div class="miembro-texto">
+                                <strong>Segundo Anciano:</strong>
+                                <span>Rodrigo Trangol</span>
+                            </div>
+                        </div>
+                        <div class="miembro-info">
+                            <img src="./imagenes/persona_placeholder.png" alt="Tercer Anciano" class="miembro-foto">
+                            <div class="miembro-texto">
+                                <strong>Tercer Anciano:</strong>
+                                <span>Richard Zapata</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Departamento de Diaconado -->
+            <section class="tarjeta-departamento">
+                <div class="departamento-icono">🤝</div>
+                <h2>Departamento de Diaconado</h2>
+                <p>Apoyo logístico y espiritual durante los servicios. Responsables del mantenimiento del templo, atención a visitantes y asistencia a los miembros en necesidad.</p>
+                
+                <button class="btn-ver-mas" data-departamento="diaconado">Ver más</button>
+                
+                <div class="departamento-detalles" id="detalles-diaconado">
+                    <div class="detalles-header">
+                        <h3>Equipo de Servicio</h3>
+                    </div>
+                    <div class="detalles-contenido">
+                        <div class="miembro-info">
+                            <img src="./imagenes/persona_placeholder.png" alt="Director de Diáconos" class="miembro-foto">
+                            <div class="miembro-texto">
+                                <strong>Director de Diáconos:</strong>
+                                <span>Alberto Ruiz</span>
+                            </div>
+                        </div>
+                        <div class="miembro-info">
+                            <img src="./imagenes/persona_placeholder.png" alt="Directora de Diaconisas" class="miembro-foto">
+                            <div class="miembro-texto">
+                                <strong>Directora de Diaconisas:</strong>
+                                <span>Gaby Cid</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Departamento de Tesorería -->
+            <section class="tarjeta-departamento">
+                <div class="departamento-icono">💼</div>
+                <h2>Departamento de Tesorería</h2>
+                <p>Administración responsable de los recursos financieros de la iglesia, garantizando transparencia y buen uso de los diezmos y ofrendas.</p>
+                
+                <button class="btn-ver-mas" data-departamento="tesoreria">Ver más</button>
+                
+                <div class="departamento-detalles" id="detalles-tesoreria">
+                    <div class="detalles-header">
+                        <h3>Equipo Financiero</h3>
+                    </div>
+                    <div class="detalles-contenido">
+                        <div class="miembro-info">
+                            <img src="./imagenes/persona_placeholder.png" alt="Tesorero/a" class="miembro-foto">
+                            <div class="miembro-texto">
+                                <strong>Tesorera:</strong>
+                                <span>Gloria Bravo</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Departamento de Secretaría -->
+            <section class="tarjeta-departamento">
+                <div class="departamento-icono">📋</div>
+                <h2>Departamento de Secretaría</h2>
+                <p>Gestión de registros, comunicaciones oficiales y documentación de la iglesia. Mantiene actualizada la información de los miembros.</p>
+                
+                <button class="btn-ver-mas" data-departamento="secretaria">Ver más</button>
+                
+                <div class="departamento-detalles" id="detalles-secretaria">
+                    <div class="detalles-header">
+                        <h3>Equipo Administrativo</h3>
+                    </div>
+                    <div class="detalles-contenido">
+                        <div class="miembro-info">
+                            <img src="./imagenes/persona_placeholder.png" alt="Secretaria" class="miembro-foto">
+                            <div class="miembro-texto">
+                                <strong>Secretaria:</strong>
+                                <span>Cynthia Araya</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Departamento de Comunicaciones -->
+            <section class="tarjeta-departamento">
+                <div class="departamento-icono">📢</div>
+                <h2>Departamento de Comunicaciones</h2>
+                <p>Gestiona la comunicación interna y externa de la iglesia, redes sociales, transmisiones en vivo y materiales informativos para mantener conectada a la congregación.</p>
+                
+                <button class="btn-ver-mas" data-departamento="comunicaciones">Ver más</button>
+                
+                <div class="departamento-detalles" id="detalles-comunicaciones">
+                    <div class="detalles-header">
+                        <h3>Equipo de Comunicaciones</h3>
+                    </div>
+                    <div class="detalles-contenido">
+                        <div class="miembro-info">
+                            <img src="./imagenes/persona_placeholder.png" alt="Director de Comunicaciones" class="miembro-foto">
+                            <div class="miembro-texto">
+                                <strong>Director de Comunicaciones:</strong>
+                                <span>Cynthia Araya</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detalles-contenido">
+                        <div class="miembro-info">
+                            <img src="./imagenes/persona_placeholder.png" alt="Director de Audio" class="miembro-foto">
+                            <div class="miembro-texto">
+                                <strong>Director de Audio:</strong>
+                                <span>Elías Ruiz</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer-principal">
+        <div class="footer-grid">
+            <div class="footer-section">
+                <h3>Sobre Nosotros</h3>
+                <p>Somos una comunidad de fe comprometida con compartir el mensaje de esperanza y amor de Jesús en nuestra ciudad.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contacto</h3>
+                <address>
+                    <p><strong>Dirección:</strong> <a href="https://www.google.com/maps?q=Juan+Williams+1776,+San+Ramón,+Chile" target="_blank" rel="noopener">Juan Williams #1776, San Ramón</a></p>
+                    <p><strong>Email:</strong> <a href="mailto:iasdnuevajerusalen2006@gmail.com">iasdnuevajerusalen2006@gmail.com</a></p>
+                    <p><strong>Teléfono:</strong> <a href="tel:+123456789">Por designar</a></p>
+                </address>
+            </div>
+            <div class="footer-section">
+                <h3>Síguenos</h3>
+                <div class="social-links">
+                    <a href="https://www.youtube.com/@IASDNuevaJerusalen2006" target="_blank" aria-label="YouTube">YouTube</a>
+                    <a href="en_progreso.html" target="_blank" aria-label="Facebook">Facebook</a>
+                    <a href="https://www.instagram.com/iasd_nuevajerusalen2006" target="_blank" aria-label="Instagram">Instagram</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 IASD - Nueva Jerusalén</p>
+            <p>Diseñado con ❤️ para la gloria de Dios</p>
+        </div>
+    </footer>
+
+    <!-- Script para expandir/contraer detalles - Múltiples expansiones permitidas -->
+    <script>
+        // Función para mostrar/ocultar detalles - PERMITE MÚLTIPLES ABIERTOS
+        document.querySelectorAll('.btn-ver-mas').forEach(btn => {
+            btn.addEventListener('click', function() {
+                const departamento = this.dataset.departamento;
+                const detalles = document.getElementById(`detalles-${departamento}`);
+                const tarjeta = this.closest('.tarjeta-departamento');
+                
+                // Toggle del detalle actual (NO cierra los demás)
+                detalles.classList.toggle('activo');
+                tarjeta.classList.toggle('expandida');
+                
+                // Cambiar texto del botón
+                if (detalles.classList.contains('activo')) {
+                    this.textContent = 'Ver menos';
+                } else {
+                    this.textContent = 'Ver más';
+                }
+            });
+        });
+        
+        // Función para cerrar detalles desde el botón X
+        document.querySelectorAll('.btn-cerrar').forEach(btn => {
+            btn.addEventListener('click', function() {
+                const departamento = this.dataset.departamento;
+                const detalles = document.getElementById(`detalles-${departamento}`);
+                const tarjeta = detalles.closest('.tarjeta-departamento');
+                const btnVerMas = tarjeta.querySelector('.btn-ver-mas');
+                
+                detalles.classList.remove('activo');
+                tarjeta.classList.remove('expandida');
+                if (btnVerMas) btnVerMas.textContent = 'Ver más';
+            });
+        });
+    </script>
+</body>
+</html>

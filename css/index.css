@@ -1,0 +1,154 @@
+/* ==========================================
+   ESTILOS ESPECÍFICOS - PÁGINA DE INICIO
+   ========================================== */
+
+/* Banner principal */
+.banner {
+  position: relative;
+  background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%), url('../imagenes/banner.jpg') center/cover no-repeat;
+  background-blend-mode: overlay;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+
+.banner-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(44, 62, 80, 0.5);
+}
+
+.banner-contenido {
+  position: relative;
+  z-index: 1;
+  padding: 2rem;
+  max-width: 800px;
+}
+
+.banner-titulo {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.banner-subtitulo {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  font-weight: 300;
+}
+
+/* Contenido principal */
+.contenido-principal {
+  min-height: 50vh;
+}
+
+/* Sección de bienvenida */
+.bienvenida {
+  padding: 4rem 2rem;
+  background-color: white;
+}
+
+.bienvenida-texto {
+  max-width: 800px;
+  margin: 0 auto 3rem;
+  text-align: center;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #34495e;
+}
+
+/* Cards container */
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.card {
+  background-color: #f8f9fa;
+  padding: 2rem;
+  border-radius: 10px;
+  text-align: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.card-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+  color: #2c3e50;
+}
+
+.card p {
+  font-size: 0.95rem;
+  color: #7f8c8d;
+  line-height: 1.6;
+}
+
+/* ==========================================
+   RESPONSIVE
+   ========================================== */
+
+@media (max-width: 768px) {
+  .banner {
+    height: 50vh;
+  }
+
+  .banner-titulo {
+    font-size: 2rem;
+  }
+
+  .banner-subtitulo {
+    font-size: 1.2rem;
+  }
+
+  .bienvenida {
+    padding: 3rem 1rem;
+  }
+
+  .cards-container {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .banner {
+    height: 40vh;
+  }
+
+  .banner-titulo {
+    font-size: 1.5rem;
+  }
+
+  .banner-subtitulo {
+    font-size: 1rem;
+  }
+
+  .bienvenida-texto {
+    font-size: 1rem;
+  }
+
+  .card {
+    padding: 1.5rem;
+  }
+}

@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Pedidos de Oración y Agradecimientos - IASD Nueva Jerusalén">
+  <meta name="theme-color" content="#2c3e50">
+  <title>Pedidos de Oración/Agradecimientos - IASD Nueva Jerusalén</title>
+  
+  <link rel="icon" type="image/png" sizes="32x32" href="./imagenes/logo_iasd.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./imagenes/logo_iasd.png">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="./css/base.css">
+  <link rel="stylesheet" href="./css/peticiones.css">
+</head>
+<body>
+  <header class="header">
+    <div class="logo-container">
+      <a href="index.html" aria-label="Inicio">
+        <img src="./imagenes/logo_iasd.png" alt="Logo IASD" class="logo" width="50" height="50">
+      </a>
+      <h1 class="titulo-iglesia">IASD Nueva Jerusalén</h1>
+    </div>
+    <nav class="nav" aria-label="Navegación principal">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="horarios.html">Horarios</a></li>
+        <li><a href="ministerios.html">Ministerios</a></li>
+        <li><a href="departamentos.html">Departamentos</a></li>
+        <li><a href="peticiones.html" class="activo" aria-current="page">Peticiones</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero-peticiones">
+    <div class="hero-overlay"></div>
+    <div class="hero-contenido">
+      <h2>Cadena de Oración</h2>
+      <p>"Orad sin cesar" - 1 Tesalonicenses 5:17</p>
+    </div>
+  </section>
+
+  <main class="contenedor-peticiones">
+
+    <!-- Introducción -->
+    <section class="introduccion">
+      <div class="intro-contenido">
+        <h3>La Oración Mueve Montañas</h3>
+        <p>
+          En la IASD Nueva Jerusalén creemos firmemente en el poder de la oración. Sabemos que Dios 
+          escucha cada petición y responde según Su perfecta voluntad. Esta cadena de oración está 
+          disponible las 24 horas del día, los 7 días de la semana, para que puedas compartir tus 
+          necesidades, alegrías y agradecimientos con nuestra comunidad de fe.
+        </p>
+        <p class="texto-destacado">
+          "Por nada estéis afanosos, sino sean conocidas vuestras peticiones delante de Dios en toda 
+          oración y ruego, con acción de gracias." - Filipenses 4:6
+        </p>
+      </div>
+    </section>
+
+    <!-- Selector de Formulario -->
+    <section class="selector-tipo">
+      <button class="btn-selector activo" data-tipo="peticion">
+        🙏 Pedido de Oración
+      </button>
+      <button class="btn-selector" data-tipo="agradecimiento">
+        ❤️ Agradecimiento
+      </button>
+    </section>
+
+    <!-- Formularios -->
+    <section class="seccion-formularios">
+      
+      <!-- Formulario de Petición -->
+      <div id="form-peticion" class="formulario-wrapper activo">
+        <div class="formulario-card">
+          <h3 class="titulo-formulario">Comparte tu Petición de Oración</h3>
+          <p class="descripcion-formulario">
+            Comparte tu necesidad con nosotros. Nuestra iglesia estará orando por ti.
+          </p>
+          
+          <form class="formulario" id="formPeticion">
+            
+            <div class="form-group">
+              <label for="nombre-peticion">Tu Nombre *</label>
+              <input type="text" id="nombre-peticion" name="nombre" required placeholder="Escribe tu nombre">
+            </div>
+
+            <div class="form-group">
+              <label for="email-peticion">Email (opcional)</label>
+              <input type="email" id="email-peticion" name="email" placeholder="tu@email.com">
+            </div>
+
+            <div class="form-group">
+              <label for="categoria-peticion">Categoría de Oración *</label>
+              <select id="categoria-peticion" name="categoria" required>
+                <option value="">Selecciona una categoría</option>
+                <option value="salud">Salud y Sanidad</option>
+                <option value="familia">Familia</option>
+                <option value="trabajo">Trabajo y Finanzas</option>
+                <option value="estudios">Estudios</option>
+                <option value="viaje">Viaje</option>
+                <option value="espiritual">Crecimiento Espiritual</option>
+                <option value="duelo">Duelo y Pérdida</option>
+                <option value="otro">Otro</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="peticion">Tu Petición *</label>
+              <textarea id="peticion" name="peticion" rows="6" required placeholder="Comparte tu petición de oración..."></textarea>
+              <small>Tu petición será tratada con confidencialidad y respeto.</small>
+            </div>
+
+            <div class="form-group checkbox-group">
+              <label class="checkbox-label">
+                <input type="checkbox" name="anonimo" id="anonimo-peticion">
+                <span>Publicar de forma anónima</span>
+              </label>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Enviar Petición</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Formulario de Agradecimiento -->
+      <div id="form-agradecimiento" class="formulario-wrapper">
+        <div class="formulario-card">
+          <h3 class="titulo-formulario">Comparte tu Agradecimiento</h3>
+          <p class="descripcion-formulario">
+            ¿Dios ha respondido una oración? ¡Comparte tu testimonio y glorifica Su nombre!
+          </p>
+          
+          <form class="formulario" id="formAgradecimiento">
+            
+            <div class="form-group">
+              <label for="nombre-agradecimiento">Tu Nombre *</label>
+              <input type="text" id="nombre-agradecimiento" name="nombre" required placeholder="Escribe tu nombre">
+            </div>
+
+            <div class="form-group">
+              <label for="email-agradecimiento">Email (opcional)</label>
+              <input type="email" id="email-agradecimiento" name="email" placeholder="tu@email.com">
+            </div>
+
+            <div class="form-group">
+              <label for="titulo-agradecimiento">Título del Testimonio *</label>
+              <input type="text" id="titulo-agradecimiento" name="titulo" required placeholder="Ej: Dios sanó a mi madre">
+            </div>
+
+            <div class="form-group">
+              <label for="agradecimiento">Tu Testimonio *</label>
+              <textarea id="agradecimiento" name="agradecimiento" rows="6" required placeholder="Comparte cómo Dios ha obrado en tu vida..."></textarea>
+              <small>Tu testimonio puede inspirar y fortalecer la fe de otros.</small>
+            </div>
+
+            <div class="form-group checkbox-group">
+              <label class="checkbox-label">
+                <input type="checkbox" name="anonimo" id="anonimo-agradecimiento">
+                <span>Publicar de forma anónima</span>
+              </label>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Compartir Testimonio</button>
+          </form>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- Información Adicional -->
+    <section class="informacion-adicional">
+      <div class="info-grid">
+        
+        <div class="info-box">
+          <div class="info-icono">🕊️</div>
+          <h4>Confidencialidad</h4>
+          <p>Todas las peticiones son tratadas con total confidencialidad y respeto.</p>
+        </div>
+
+        <div class="info-box">
+          <div class="info-icono">⛪</div>
+          <h4>Oración en Comunidad</h4>
+          <p>Tu petición será compartida con nuestro equipo de intercesión.</p>
+        </div>
+
+        <div class="info-box">
+          <div class="info-icono">📖</div>
+          <h4>Promesas de Dios</h4>
+          <p>"Todo lo que pidiereis en oración, creyendo, lo recibiréis" - Mateo 21:22</p>
+        </div>
+
+        <div class="info-box">
+          <div class="info-icono">💬</div>
+          <h4>Contacto Directo</h4>
+          <p>Para oración urgente, llámanos o escríbenos directamente.</p>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer-principal">
+    <div class="footer-grid">
+      <div class="footer-section">
+        <h3>Sobre Nosotros</h3>
+        <p>Somos una comunidad de fe comprometida con compartir el mensaje de esperanza y amor de Jesús en nuestra ciudad.</p>
+      </div>
+      <div class="footer-section">
+        <h3>Contacto</h3>
+        <address>
+          <p><strong>Dirección:</strong> <a href="https://www.google.com/maps?q=Juan+Williams+1776,+San+Ramón,+Chile" target="_blank" rel="noopener">Juan Williams #1776, San Ramón</a></p>
+          <p><strong>Email:</strong> <a href="mailto:iasdnuevajerusalen2006@gmail.com">iasdnuevajerusalen2006@gmail.com</a></p>
+          <p><strong>Teléfono:</strong> <a href="tel:+123456789">Por designar</a></p>
+        </address>
+      </div>
+      <div class="footer-section">
+        <h3>Síguenos</h3>
+        <div class="social-links">
+          <a href="https://www.youtube.com/@IASDNuevaJerusalen2006" target="_blank" aria-label="YouTube">YouTube</a>
+          <a href="en_progreso.html" target="_blank" aria-label="Facebook">Facebook</a>
+          <a href="https://www.instagram.com/iasd_nuevajerusalen2006" target="_blank" aria-label="Instagram">Instagram</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 IASD - Nueva Jerusalén</p>
+      <p>Diseñado con ❤️ para la gloria de Dios</p>
+    </div>
+  </footer>
+
+  <script>
+    // Cambiar entre formularios
+    const selectores = document.querySelectorAll('.btn-selector');
+    const formularios = document.querySelectorAll('.formulario-wrapper');
+
+    selectores.forEach(selector => {
+      selector.addEventListener('click', function() {
+        const tipo = this.dataset.tipo;
+        
+        selectores.forEach(s => s.classList.remove('activo'));
+        this.classList.add('activo');
+        
+        formularios.forEach(f => f.classList.remove('activo'));
+        document.getElementById(`form-${tipo}`).classList.add('activo');
+      });
+    });
+
+    // Manejar envío de petición
+    document.getElementById('formPeticion').addEventListener('submit', function(e) {
+      e.preventDefault();
+      alert('¡Gracias por compartir tu petición! Estaremos orando por ti. Que Dios te bendiga.');
+      this.reset();
+    });
+
+    // Manejar envío de agradecimiento
+    document.getElementById('formAgradecimiento').addEventListener('submit', function(e) {
+      e.preventDefault();
+      alert('¡Gloria a Dios! Gracias por compartir tu testimonio. ¡Que bendición!');
+      this.reset();
+    });
+  </script>
+</body>
+</html>
